@@ -9,7 +9,7 @@ Avant d'utiliser les outils, il est nécessaire de copier les données de la cl�
 L'autre outil à utiliser est "Binwalk" qui est un outil Python intégré qui est utilisé pour analyser, désosser et extraire des images de micrologiciel.
  Beaucoup de gens qui jouent aux CTF utilisent cet outil pour analyser les fichiers qu'ils trouvent. ( CF: photo binwalk).
 
-Nous pouvons voir qu'il y a différents photos d'anamiaux ainsi que les différents fichiers textes( cf : photo, photorec 2), pour cela nous avons utilisé la commande "photorec" ( cf : photorec).
+le deuxieme logiciel pour extraire est Nous pouvons voir qu'il y a différents photos d'anamiaux ainsi que les différents fichiers textes( cf : photo, photorec 2), pour cela nous avons utilisé aussi la commande "photorec" ( cf : photorec).
 
 De meme, il serai intéressant d'utiliser Wireshark qui  est un analyseur de protocole de réseau qui peut être utilisé pour examiner les données réseau sur la clé USB.
 
