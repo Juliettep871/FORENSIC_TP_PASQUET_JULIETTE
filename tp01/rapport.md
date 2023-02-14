@@ -1,6 +1,6 @@
-﻿Pour garantir la sécurité de l'utilisation d'une clé USB trouvée, il est nécessaire de l'analyser en utilisant des outils. Les photos illustrant les différentes étapes se trouvent dans le répertoire "IMG". Avant d'utiliser les outils, il est important de copier les données de la clé USB en utilisant l'outil "dd" pour éviter toute perte de données.
+﻿Pour garantir la sécurité de l'utilisation d'une clé USB trouvée, il est nécessaire de l'analyser en utilisant des outils avant de l’utilisé. Les photos illustrant les différentes étapes se trouvent dans le répertoire "IMG". Avant d'utiliser les outils, il est important de copier les données de la clé USB en utilisant l'outil "dd" pour éviter toute perte de données.
  
-La première étape est d’analyser les métadonnées
+La première étape est d’analyser les métadonnées.
 
 Pour cela, le premier outil utilisé est "SHA256sum". Cette commande permet de déterminer la somme de contrôle SHA256 (voir photo : SHA256sum). Comme le montre la photo, le résultat est le même.
 
@@ -18,8 +18,8 @@ Voici les différentes photos récupérées (voir photo : resultat photo). Nous 
 De même, il serait intéressant d'utiliser Wireshark, qui est un analyseur de protocole de réseau pouvant être utilisé pour examiner les données réseau sur la clé USB
 
 
-
-
+CONCLUSION :
+Pour donner suite à l'analyse de la clé USB, il a été déterminé qu'elle était sécurisée et ne présentait aucun risque. Ainsi, nous sommes en mesure de la brancher sur un ordinateur.
 
 
 
