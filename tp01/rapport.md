@@ -10,6 +10,7 @@ La première étape est d’analyser les métadonnées.
 
 Pour cela, le premier outil utilisé est "SHA256sum". Cette commande permet de déterminer la somme de contrôle SHA256 (voir photo : SHA256sum). Comme le montre la photo, le résultat est le même.
 
+
 Avant de tenter de trouver les fichiers qui se trouvent sur la clé, il est nécessaire d'analyser plus en détail le disque. Pour cela, on utilise la commande "fdisk -l" pour lister toutes les partitions (voir photo : fdisk).  
 
 Puis, il est important de connaitre la taille du disque ainsi que les droits du fichier on utilise la commande « exiftool USB_Image » (voir image : exiftool)
