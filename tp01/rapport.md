@@ -1,9 +1,10 @@
 ﻿## Introduction
 
 
-Pour garantir la sécurité de l'utilisation d'une clé USB trouvée, il est nécessaire de l'analyser en utilisant des outils avant de l’utilisé. Les photos illustrant les différentes étapes se trouvent dans le répertoire "IMG". Avant d'utiliser les outils, il est important de copier les données de la clé USB en utilisant l'outil "dd" pour éviter toute perte de données.
+Un policier a trouvé une clé USB sur un parking. Afin de déterminer si cette clé est malveillante, il est nécessaire de l'analyser à l'aide d'outils spécialisés.
+Les photos illustrant les différentes étapes se trouvent dans le répertoire "IMG". Avant d'utiliser les outils, il est important de copier les données de la clé USB en utilisant l'outil "dd" pour éviter toute perte de données.
  
-## Analyse
+## Analyse 
 
 La première étape est d’analyser les métadonnées.
 
