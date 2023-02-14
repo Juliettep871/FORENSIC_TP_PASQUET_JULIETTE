@@ -1,13 +1,9 @@
 ﻿
-## Introduction :
-
-
-
 
 
 Pour garantir la sécurité de l'utilisation d'une clé USB trouvée, il est nécessaire de l'analyser en utilisant des outils avant de l’utilisé. Les photos illustrant les différentes étapes se trouvent dans le répertoire "IMG". Avant d'utiliser les outils, il est important de copier les données de la clé USB en utilisant l'outil "dd" pour éviter toute perte de données.
  
-La première étape est d’analyser les métadonnées.
+La première étape est d’analyser les métadonnées
 
 Pour cela, le premier outil utilisé est "SHA256sum". Cette commande permet de déterminer la somme de contrôle SHA256 (voir photo : SHA256sum). Comme le montre la photo, le résultat est le même.
 
