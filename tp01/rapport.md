@@ -20,7 +20,7 @@ Il faut maintenant récupérer les documents. Pour cela, j'ai utilisé plusieurs
 
 J’ai alors utilisé l’outil "photorec". La commande est la suivante : "photorec USB_IMAGE". La commande ouvre une fenêtre où il est nécessaire de sélectionner le disque que l'on souhaite analyser, ainsi que le système de fichiers. L'analyse est lancée et le résultat montre 3 fichiers PNG, 2 fichiers JPG et 1 fichier TXT (voir photos : photorec 2&3). Les fichiers sont situés dans deux répertoire qui se nomme « recup_dir1 et recup_dir2 » (voir photo : recup_dir »
 
-Voici les différentes photos récupérées (voir photo : resultat photo). Nous pouvons voir des photos de plusieurs animaux, un fichier .ini et un texte qui est le suivant : "bosch{1MAG3}". Le fichier .ini contient le message suivant : "[Trash info] path=secret.png deletionDate=2023-02-10T22:21:51". On pourrait en déduire que l'action a été réalisée le 10 février 2023 par un individu qui se prénomme "Bosch" (preuve donnée dans les images f0016520.png et f0040392.png).
+Voici les différentes photos récupérées (voir photo : resultat photo). Nous pouvons voir des photos de plusieurs animaux, un fichier .ini, deux flag et un texte qui est le suivant : "bosch{1MAG3}". Le fichier .ini contient le message suivant : "[Trash info] path=secret.png deletionDate=2023-02-10T22:21:51". On pourrait en déduire que l'action a été réalisée le 10 février 2023 par un individu qui se prénomme "Bosch" (preuve donnée dans les images f0016520.png et f0040392.png).
 De même, il serait intéressant d'utiliser Wireshark, qui est un analyseur de protocole de réseau pouvant être utilisé pour examiner les données réseau sur la clé USB
 
 
