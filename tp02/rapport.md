@@ -6,7 +6,7 @@ Le but est de lister les lignes dont :
 
 <corps>
 	<details>
-		<summary> Correction commande : </summary>
+		<summary> Correction: </summary>
 
 awk -F ';' '$5!="" && $1=="2019" && $9 ~ /Carantec/ {print}' consommation-annuelle-residentielle-par-adresse.csv
 
