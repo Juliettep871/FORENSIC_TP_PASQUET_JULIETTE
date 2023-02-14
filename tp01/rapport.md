@@ -10,6 +10,7 @@ La première étape est d’analyser les métadonnées.
 
 Pour cela, le premier outil utilisé est "SHA256sum". Cette commande permet de déterminer la somme de contrôle SHA256 (voir photo : SHA256sum). Comme le montre la photo, le résultat est le même.
 
+![image](https://user-images.githubusercontent.com/125276800/218699761-22c01409-0150-491d-a079-e27c9a0f0e05.png)
 
 Avant de tenter de trouver les fichiers qui se trouvent sur la clé, il est nécessaire d'analyser plus en détail le disque. Pour cela, on utilise la commande "fdisk -l" pour lister toutes les partitions (voir photo : fdisk).  
 
