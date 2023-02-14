@@ -4,7 +4,9 @@ Le but est de lister les lignes dont :
 -    indice_de_repetition ne doit pas être vide
 -    L’année est égale à 2019 
 
-## Correction :
+<corps>
+	<details>
+		<summary> Correction commande : </summary>
 
 awk -F ';' '$5!="" && $1=="2019" && $9 ~ /Carantec/ {print}' consommation-annuelle-residentielle-par-adresse.csv
 
