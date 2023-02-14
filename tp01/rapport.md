@@ -18,7 +18,10 @@ Avant de tenter de trouver les fichiers qui se trouvent sur la clé, il est néc
 Puis, il est important de connaitre la taille du disque ainsi que les droits du fichier on utilise la commande « exiftool USB_Image » (voir image : exiftool)
 Le deuxième outil est "Autopsy", une application graphique qui facilite l'analyse forensique des systèmes de fichiers. Il est utilisé sur Kali, mais nécessite l'installation de JavaScript, que je n'ai pas réussi à installer (voir photo 2).
 
-L'autre outil à utiliser est "Binwalk", qui est un outil Python intégré utilisé pour analyser, désosser et extraire des images de micrologiciel. En tapant une commande, nous pouvons analyser la clé (voir photo : binwalk). La capture d'écran montre qu'il y a différents fichiers, notamment des images. 
+L'autre outil à utiliser est "Binwalk", qui est un outil Python intégré utilisé pour analyser, désosser et extraire des images de micrologiciel. En tapant une commande, nous pouvons analyser la clé (voir photo : binwalk). La capture d'écran montre qu'il y a différents fichiers, notamment des images de format « png » et « jpeg ». 
+
+![image](https://user-images.githubusercontent.com/125276800/218701486-d7336de3-ff54-44c3-998c-971e37bf5e3f.png)
+
 Il faut maintenant récupérer les documents. Pour cela, j'ai utilisé plusieurs outils comme "Scalpel". Malheureusement, cet outil ne permet pas de récupérer toutes les données (voir la photo : Scalpel). En effet, on ne peut accéder qu'aux fichiers ayant l'extension "png".
 
 J’ai alors utilisé l’outil "photorec". La commande est la suivante : "photorec USB_IMAGE". La commande ouvre une fenêtre où il est nécessaire de sélectionner le disque que l'on souhaite analyser, ainsi que le système de fichiers. L'analyse est lancée et le résultat montre 3 fichiers PNG, 2 fichiers JPG et 1 fichier TXT (voir photos : photorec 2&3). Les fichiers sont situés dans deux répertoire qui se nomme « recup_dir1 et recup_dir2 » (voir photo : recup_dir »), crée par la commande.
