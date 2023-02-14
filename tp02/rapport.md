@@ -17,3 +17,5 @@ Nous utilisons l'option -F pour spécifier que le délimiteur de champ est le poin
 		<summary> Résultat : </summary>
 
 ![image](https://user-images.githubusercontent.com/125276800/218736490-a2012d67-71d7-4549-aa92-bfd309809f1d.png)
+
+.
