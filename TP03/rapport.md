@@ -71,6 +71,7 @@ Nous pouvons maintenant ouvrir le fichier, on retrouve :
 ## Conclusion ##
 Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente ce qui a permis à l’attaquant de permettre dans le système. Cette faille est surement liée aux différentes requêtes que nous avons trouvées dans les logs. De plus, la présence de la tache planifiée dans la crontab laisse la possibilité à l’attaquant de se connecter sur la machine.
 ##Recommandations##
+
 Pour corriger la faille, la première chose à faire est de sécuriser le serveur web en HTTPS, cela va permettre par exemple de régler les problèmes présents dans les log. Il sera aussi nécessaire de supprimer la tache planifiée présent dans la crontab et bloquer le port 4444 qui était utiliser par le hacker. Celui-ci ayant réussi à accéder au système, il est indispensable de changer le mot de passe en suivant les recommandations de l’ANSSI.
 ## Conclusion générale ##
 
