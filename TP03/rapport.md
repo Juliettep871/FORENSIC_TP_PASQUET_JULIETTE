@@ -11,9 +11,9 @@ Le site Bosch-Cyber a été victime d'une attaque informatique, au cours de laquel
 
 Pour effectuer cette analyse, plusieurs méthodes seront utilisées pour examiner le site et le serveur.
 Les éléments suivants seront analysés :
- 	- L'historique des commandes 
-	* Les différents journaux (logs) 
-	+ L'analyse des données et des fichiers
+ 	1. L'historique des commandes 
+	2. Les différents journaux (logs) 
+	3. L'analyse des données et des fichiers
 
 ## Résultats ##
 
