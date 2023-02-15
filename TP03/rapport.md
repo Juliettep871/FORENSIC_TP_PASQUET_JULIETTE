@@ -1,3 +1,7 @@
+## Préparation ##
+
+Pour réaliser l’analyse, l’environnement utilisé est une machine virtuelle Kali Linux sur laquelle est installé la docker du site web qui a été attaqué. La connexion à la machine attaquée se fait en ssh via le port 2222. Les identifiants nous ont été fournis pour nous connecter
+
 ## Introduction
 
 Le site Bosch-Cyber a été victime d'une attaque informatique, au cours de laquelle un attaquant a utilisé différents outils pour s'infiltrer dans le système. Notre objectif est de déterminer quelles informations l'attaquant a extraites du site et de proposer des recommandations pour éviter que cela ne se reproduise à l'avenir. Cette mission sera confiée à Juliette Pasquet.
