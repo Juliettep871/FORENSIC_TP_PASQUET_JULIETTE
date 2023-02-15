@@ -10,10 +10,10 @@ Le site Bosch-Cyber a été victime d'une attaque informatique, au cours de laquel
 ## Méthodologie 
 
 Pour effectuer cette analyse, plusieurs méthodes seront utilisées pour examiner le site et le serveur.
-Les éléments suivants seront analysés :
+Les éléments suivants seront analysés : </br>
  	1. L'historique des commandes </br>
-	2. Les différents journaux (logs) 
-	3. L'analyse des données et des fichiers
+	2. Les différents journaux (logs) </br>
+	3. L'analyse des données et des fichiers</br>
 
 ## Résultats ##
 
@@ -22,14 +22,14 @@ La première étape consiste à accéder à l'historique des commandes. Pour ce faire
 
 ![image](https://user-images.githubusercontent.com/125276800/219003713-992bf91f-8d5e-48c2-856b-160a5bbf2a67.png)
 
-Les commandes exécutées ont été réalisées par le pirate informatique. Plusieurs points importants sont à noter. En effet, celui-ci a pu accéder au fichier contenant le mot de passe, à savoir : __/etc/passwd__ ainsi que le nom d’utilisation. La deuxième information important, est le __« ping 138.66.89.12 »__, qui représente sans doute la machine distance du hackeur. 
+Les commandes exécutées ont été réalisées par le pirate informatique. Plusieurs points importants sont à noter. En effet, celui-ci a pu accéder au fichier contenant le mot de passe, à savoir : __/etc/passwd__ ainsi que le nom d’utilisation. La deuxième information important, est le __« ping 138.66.89.12 »__, qui représente sans doute la machine distance du hackeur. </br>
 Une fois que l'attaquant a déterminé que la fonction ping fonctionnait correctement, il a accédé à la __"crontab"__ pour ajouter la ligne suivante :
 
 ![image](https://user-images.githubusercontent.com/125276800/219027806-9600f37f-80af-4e59-afe8-5b7f66c62f35.png) 
 
-La ligne de crontab, permet d’ouvrir une connexion TCP vers adresse IP __« 138.6689.12 »__ sur le port 444 et redirige les entrées/sorties de __bin/bash__ vers cette connexion. Elle permet donc de créer une connexion shell à distance pour exécuter des commandes
+La ligne de crontab, permet d’ouvrir une connexion TCP vers adresse IP __« 138.6689.12 »__ sur le port 444 et redirige les entrées/sorties de __bin/bash__ vers cette connexion. Elle permet donc de créer une connexion shell à distance pour exécuter des commandes. </br>
 
-En conclusion, en revenant à l'historique des commandes, on peut remarquer la création d'un fichier zip nommé __"b0sch_cyber_tools"__, qui doit correspondre aux outils introduits par le hacker. Celui-ci l'a déplacé dans le répertoire __"/opt/leak"__. De plus, l'attaquant a supprimé le fichier __"/tmp/mypasswd"__, qui contenait le mot de passe permettant d'ouvrir le fichier zip. Il est important de déterminer quelles informations ont été extraites du système.
+En conclusion, en revenant à l'historique des commandes, on peut remarquer la création d'un fichier zip nommé __"b0sch_cyber_tools"__, qui doit correspondre aux outils introduits par le hacker. Celui-ci l'a déplacé dans le répertoire __"/opt/leak"__. De plus, l'attaquant a supprimé le fichier __"/tmp/mypasswd"__, qui contenait le mot de passe permettant d'ouvrir le fichier zip. Il est important de déterminer quelles informations ont été extraites du système. </br>
 
 La deuxième étape consiste à analyser les différents logs afin de déterminer l'heure et la date de l'attaque. Ces fichiers se trouvent dans le répertoire __"/var/log"__. D'après nos suppositions, l'attaque a commencé le 3 septembre dans la matinée. Les logs permettent également de constater que plusieurs connexions ont échoué le 3 septembre entre 12h et 13h. Vous trouverez ci-dessous le fichier __"error.log"__:
 
@@ -93,6 +93,6 @@ Le site Bosch Cyber a subi une attaque informatique via une faille de sécurité. 
 
 Pour conclure, voici les commandes utilisées :
 
-* ~/.bash_history : voir l’histoirique des commandes
-* grep ‘138.66.89.12’ | grep ‘pass’ access.log : trouver le mot de passe pour le fichier zip
+* ~/.bash_history : voir l’histoirique des commandes</br>
+* grep ‘138.66.89.12’ | grep ‘pass’ access.log : trouver le mot de passe pour le fichier zip</br>
 * unzip bosh_cyber_tools.zip -d /home/b0osh : dézipper le fichier et le déplacer
