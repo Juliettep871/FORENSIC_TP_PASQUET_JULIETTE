@@ -74,4 +74,10 @@ Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente
 Pour corriger la faille, la première chose à faire est de sécuriser le serveur web en HTTPS, cela va permettre par exemple de régler les problèmes présents dans les log. Il sera aussi nécessaire de supprimer la tache planifiée présent dans la crontab et bloquer le port 4444 qui était utiliser par le hacker. Celui-ci ayant réussi à accéder au système, il est indispensable de changer le mot de passe en suivant les recommandations de l’ANSSI.
 ## Conclusion générale ##
 
-Le site Bosh-Cyber a subis une attaque informatique via une faille de sécurité
+Le site Bosch Cyber a subi une attaque informatique via une faille de sécurité. L’attaquant à prendre la main sur le serveur à distance, nous avons déterminé cela grâce aux logs, l’historique de commande et à la crontab.
+
+Pour conclure, voici les commandes utilisées :
+
+* ~/.bash_history : voir l’histoire des commandes
+* grep ‘138.66.89.12’ | grep ‘pass’ access.log : trouver le mot de passe pour le fichier zip
+* unzip bosh_cyber_tools.zip -d /home/b0osh : dézipper le fichier et le déplacer
