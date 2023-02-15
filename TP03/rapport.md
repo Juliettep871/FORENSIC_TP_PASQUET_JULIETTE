@@ -53,11 +53,12 @@ Pour rappel, le fichier se situe dans __/opt/leak__
 
 Avant de le dézipper, il est nécessaire de vérifier le contenue du fichier avec la commande __ «  unzip -d ».
 
+![image](https://user-images.githubusercontent.com/125276800/219041152-af82332f-b4e2-4827-afcc-fa0c98a2b993.png)
+
 Il contient donc un fichier __.txt__
 
 Nous pouvons maintenant décompresser le fichier, cela nous ressort une erreur de droit. Il est nécessaire de le déplacer pour cela on exécuter la commmande suivante __«  unzip bosh_cyber_tools.zip -d /home/b0osh/ » »__ . On déplace le fichier, dans __/home/b0osh__, il est nécessaire de taper le mot de passe que nous avons trouvé dans les log.
 
-Le fichier dézipper contient un fichier .txt :
+Nous pouvons maintenant ouvrir le fichier, on retrouve :
 
-![image](https://user-images.githubusercontent.com/125276800/219039600-ac881183-c53c-41f8-b9f2-4a3570eea12e.png)
-
+![image](https://user-images.githubusercontent.com/125276800/219041043-ff8562ff-b08f-4ae9-991d-408ed6bed96c.png)
