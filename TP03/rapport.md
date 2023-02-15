@@ -59,7 +59,7 @@ Nous avons maintenant le mot de passe, nous pouvons donc exploiter le fichier zi
 
 ![image](https://user-images.githubusercontent.com/125276800/219037555-f0a1fa09-3e0a-41bf-8a43-4c4e27b97f94.png).
 
-Avant de le dézipper, il est nécessaire de vérifier le contenu du fichier avec la commande :__«  unzip -d »__.
+Avant de le dézipper, il est nécessaire de vérifier le contenu du fichier avec la commande :__«  unzip -l »__.
 
 ![image](https://user-images.githubusercontent.com/125276800/219041152-af82332f-b4e2-4827-afcc-fa0c98a2b993.png)
 
@@ -71,7 +71,7 @@ Nous pouvons maintenant ouvrir le fichier, on retrouve :
 
 ![image](https://user-images.githubusercontent.com/125276800/219041043-ff8562ff-b08f-4ae9-991d-408ed6bed96c.png)
 
-Une des étapes qui a été réalisé à été d’ouvrir le fichier de configuration du site web qui est situé dans le répertoire : __ « /var/www/html »__. Le seul fichier présent est __« index.html »__, la configuration est la suivante :
+Une des autres étapes qui a été réalisé à été d’ouvrir le fichier de configuration du site web qui est situé dans le répertoire : __ « /var/www/html »__. Le seul fichier présent est __« index.html »__, la configuration est la suivante :
 
 ![image](https://user-images.githubusercontent.com/125276800/219065105-9d269800-2fbf-40dd-9f82-309567813e06.png)
 
