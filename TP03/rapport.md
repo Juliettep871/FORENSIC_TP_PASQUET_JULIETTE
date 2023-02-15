@@ -18,7 +18,7 @@ La première étape consiste à accéder à l'historique des commandes. Pour ce faire
 
 ![image](https://user-images.githubusercontent.com/125276800/219003713-992bf91f-8d5e-48c2-856b-160a5bbf2a67.png)
 
-Les commandes exécutées ont été réalisées par le pirate informatique. Plusieurs points importants sont à noter. En effet, celui-ci a pu accéder au fichier contenant le mot de passe, à savoir : __/etc/passwd__ ainsi que le nom d’utilisation. La deuxième information important, est le __ « ping 138.66.89.12 »__, qui représente sans doute la machine distance du hackeur. 
+Les commandes exécutées ont été réalisées par le pirate informatique. Plusieurs points importants sont à noter. En effet, celui-ci a pu accéder au fichier contenant le mot de passe, à savoir : __/etc/passwd__ ainsi que le nom d’utilisation. La deuxième information important, est le __« ping 138.66.89.12 »__, qui représente sans doute la machine distance du hackeur. 
 Une fois que l'attaquant a déterminé que la fonction ping fonctionnait correctement, il a accédé à la __"crontab"__ pour ajouter la ligne suivante :
 
 ![image](https://user-images.githubusercontent.com/125276800/219027806-9600f37f-80af-4e59-afe8-5b7f66c62f35.png) 
