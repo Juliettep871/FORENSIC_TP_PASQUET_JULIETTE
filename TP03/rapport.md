@@ -1,6 +1,6 @@
 ## Préparation ##
 
-Pour réaliser l’analyse, l’environnement utilisé est une machine virtuelle Kali Linux sur laquelle est installé la docker du site web qui a été attaqué. La connexion à la machine attaquée se fait en ssh via le port 2222. Les identifiants nous ont été fournis pour nous connecter
+Pour réaliser l’analyse, l’environnement utilisé est une machine virtuelle Kali Linux sur laquelle est installé le docker du site web qui a été attaqué. La connexion à la machine attaquée se fait en ssh via le port 2222. Les identifiants nous ont été fournis pour nous connecter
 
 ## Introduction
 
