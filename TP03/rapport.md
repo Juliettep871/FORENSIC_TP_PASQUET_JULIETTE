@@ -75,7 +75,7 @@ Une des autres étapes qui a été réalisé à été d’ouvrir le fichier de configurati
 
 ![image](https://user-images.githubusercontent.com/125276800/219065105-9d269800-2fbf-40dd-9f82-309567813e06.png)
 
-Cela indique que le fichier est en maintenance.
+Cela indique que le site est en maintenance.
 
 
 ## Conclusion ##
