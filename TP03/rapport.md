@@ -14,7 +14,7 @@ Les points suivants vont être analysé :
 ## Résultats ##
 
 
-La première chose à faire est d’accéder à l’historique des différentes commandes. Pour cela il faut taper la commande __ cat ~/.bash_history__. Le résultat est le suivant :
+La première chose à faire est d’accéder à l’historique des différentes commandes. Pour cela il faut taper la commande __ « cat ~/.bash_history »__. Le résultat est le suivant :
 
 ![image](https://user-images.githubusercontent.com/125276800/219003713-992bf91f-8d5e-48c2-856b-160a5bbf2a67.png)
 
