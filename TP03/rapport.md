@@ -1,6 +1,6 @@
 ## Introduction
 
-Le site Bosch-Cyber a été victime d'une attaque informatique, au cours de laquelle un attaquant a utilisé différents outils pour s'infiltrer dans le système. Notre objectif est de déterminer quelles informations l'attaquant a extraites et comment du site et de proposer des recommandations pour éviter que cela ne se reproduise à l'avenir. Cette mission sera confiée à Juliette Pasquet.
+Le site Bosch-Cyber a été victime d'une attaque informatique, au cours de laquelle un attaquant a utilisé différents outils pour s'infiltrer dans le système. Notre objectif est de déterminer quelles informations l'attaquant a extraites du site et de proposer des recommandations pour éviter que cela ne se reproduise à l'avenir. Cette mission sera confiée à Juliette Pasquet.
 
 
 ## Méthodologie 
@@ -67,8 +67,11 @@ Nous pouvons maintenant ouvrir le fichier, on retrouve :
 
 ![image](https://user-images.githubusercontent.com/125276800/219041043-ff8562ff-b08f-4ae9-991d-408ed6bed96c.png)
 
+Une des étapes qui a été réalisé à été d’ouvrir le fichier de configuration du site web qui est situé dans le répertoire : __ « /var/www/html »__. Le seul fichier présent est __« index.html »__, la configuration est la suivante :
+
 
 ## Conclusion ##
+
 Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente ce qui a permis à l’attaquant de permettre dans le système. Cette faille est surement liée aux différentes requêtes que nous avons trouvées dans les logs. De plus, la présence de la tache planifiée dans la crontab laisse la possibilité à l’attaquant de se connecter sur la machine.
 
 
