@@ -33,12 +33,13 @@ La deuxième étape consiste à analyser les différents logs afin de déterminer l'h
 
 Le premier message d'erreur signalé dans le fichier "error.log" indique que la poignée de main SSL a échoué en raison d'une clé partagée incorrecte entre le client et le serveur. Cette erreur peut être liée à un problème avec le certificat SSL installé ou avec la configuration du serveur web. Toutefois, cette information ne nous permet pas de tirer de conclusion concluante.
 
-Le deuxième message d'erreur indique que le serveur web a reçu une demande HTTP GET pour le fichier __"info.php"___, mais que le script PHP n'a pas réussi à récupérer les valeurs des en-têtes http.
+Le deuxième message d'erreur indique que le serveur web a reçu une demande HTTP GET pour le fichier __"info.php"__, mais que le script PHP n'a pas réussi à récupérer les valeurs des en-têtes http.
 De plus, il est nécessaire d’accéder au fichier __« access.log »__ :
 
 ![image](https://user-images.githubusercontent.com/125276800/219000474-35f24fb6-aa78-4f20-b7fc-06f1d1473b31.png).
 
-Il est nécessaire de filtrer les lignes afin de trouver un résultat concluant. Pour cela, on utilise la commande __ « grep ‘138.66.89.12’ | grep ‘pass’ access.log »__. Cette commande permet de filtrer les lignes de log pour trouver celles qui contiennent à la fois l'adresse IP de l'attaquant (138.66.89.12) et le mot-clé "pass", ce qui permet de trouver des informations sur le mot de passe du zip.
+Il est nécessaire de filtrer les lignes afin de trouver un résultat concluant. Pour cela, on utilise la commande __« grep ‘138.66.89.12’ | grep ‘pass’ access.log »__. Cette commande permet de filtrer les lignes de log pour trouver celles qui contiennent à la fois l'adresse IP de l'attaquant (138.66.89.12) et le mot-clé "pass", ce qui permet de trouver des informations sur le mot de passe du zip.
+
 
 
 
@@ -48,7 +49,7 @@ Il est nécessaire de filtrer les lignes afin de trouver un résultat concluant. P
 Cela ressort le résultat suivant :
 
 
-
+![image](https://user-images.githubusercontent.com/125276800/219055206-4be0d988-cdad-4b22-afb7-f45b2cb156c7.png)
 
 Nous avons maintenant le mot de passe, nous pouvons donc exploiter le fichier zip trouvé précédemment. Pour rappel, le fichier se situe dans __/opt/leak__
 
@@ -65,3 +66,12 @@ Nous pouvons maintenant décompresser le fichier, cependant nous obtenons une err
 Nous pouvons maintenant ouvrir le fichier, on retrouve :
 
 ![image](https://user-images.githubusercontent.com/125276800/219041043-ff8562ff-b08f-4ae9-991d-408ed6bed96c.png)
+
+
+## Conclusion ##
+Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente ce qui a permis à l’attaquant de permettre dans le système. Cette faille est surement liée aux différentes requêtes que nous avons trouvées dans les logs. De plus, la présence de la tache planifiée dans la crontab laisse la possibilité à l’attaquant de se connecter sur la machine.
+##Recommandations##
+Pour corriger la faille, la première chose à faire est de sécuriser le serveur web en HTTPS, cela va permettre par exemple de régler les problèmes présents dans les log. Il sera aussi nécessaire de supprimer la tache planifiée présent dans la crontab et bloquer le port 4444 qui était utiliser par le hacker. Celui-ci ayant réussi à accéder au système, il est indispensable de changer le mot de passe en suivant les recommandations de l’ANSSI.
+## Conclusion générale ##
+
+Le site Bosh-Cyber a subis une attaque informatique via une faille de sécurité
