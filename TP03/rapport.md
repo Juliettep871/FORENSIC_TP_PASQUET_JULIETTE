@@ -80,13 +80,16 @@ Cela indique que le site est en maintenance.
 
 ## Conclusion ##
 
-Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente ce qui a permis à l’attaquant de permettre dans le système. Cette faille est surement liée aux différentes requêtes que nous avons trouvées dans les logs. De plus, la présence de la tache planifiée dans la crontab laisse la possibilité à l’attaquant de se connecter sur la machine.
+Au vu de l'analyse effectuée, nous pouvons en déduire qu’une faille est présente ce qui a permis à l’attaquant de pénétrer dans le système. Cette faille est surement liée aux différentes requêtes que nous avons trouvées dans les logs. Grace aux log, nous avons pu déterminer le mot de passe du fichier zip qui a été déposé par l’attaquant __b0sch_cyber_tool__. De plus, la présence de la tache planifiée dans la crontab laisse la possibilité à l’attaquant de se connecter sur la machine. 
+
+
 
 
 
 ## Recommandations ##
 
 Pour corriger la faille, la première chose à faire est de sécuriser le serveur web en HTTPS, cela va permettre par exemple de régler les problèmes présents dans les log. Il sera aussi nécessaire de supprimer la tache planifiée présent dans la crontab et bloquer le port 4444 qui était utiliser par le hacker. Celui-ci ayant réussi à accéder au système, il est indispensable de changer le mot de passe en suivant les recommandations de l’ANSSI.
+
 ## Conclusion générale ##
 
 Le site Bosch Cyber a subi une attaque informatique via une faille de sécurité. L’attaquant à prendre la main sur le serveur à distance, nous avons déterminé cela grâce aux logs, l’historique de commande et à la crontab.
