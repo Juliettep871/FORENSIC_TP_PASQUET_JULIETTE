@@ -82,6 +82,6 @@ Le site Bosch Cyber a subi une attaque informatique via une faille de sécurité. 
 
 Pour conclure, voici les commandes utilisées :
 
-* ~/.bash_history : voir l’histoire des commandes
+* ~/.bash_history : voir l’histoirique des commandes
 * grep ‘138.66.89.12’ | grep ‘pass’ access.log : trouver le mot de passe pour le fichier zip
 * unzip bosh_cyber_tools.zip -d /home/b0osh : dézipper le fichier et le déplacer
