@@ -69,6 +69,10 @@ Nous pouvons maintenant ouvrir le fichier, on retrouve :
 
 Une des étapes qui a été réalisé à été d’ouvrir le fichier de configuration du site web qui est situé dans le répertoire : __ « /var/www/html »__. Le seul fichier présent est __« index.html »__, la configuration est la suivante :
 
+![image](https://user-images.githubusercontent.com/125276800/219065105-9d269800-2fbf-40dd-9f82-309567813e06.png)
+
+Cela indique que le fichier est en maintenance.
+
 
 ## Conclusion ##
 
